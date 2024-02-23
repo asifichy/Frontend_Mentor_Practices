@@ -1,0 +1,229 @@
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 36.5rem;
+    min-width: 370px;
+    background-color: var(--Rose-White);
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 7px;
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: YoungSerif-Regular;
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {    
+    font-family: OutFit;
+    src: url("./assets/fonts/outfit/static/Outfit-Light.ttf");
+}
+
+body{
+    background-color: var(--Eggshell);
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--Wenge-Brown);
+    font-size: .8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+h1{
+    font-family: YoungSerif-Regular;
+    color: rgb(51, 51, 44);
+}
+
+.first-p{
+    font-family: Outfit;
+    font-size: 14px;
+}
+
+img{
+    /*max-width: 100%;*/    
+    border-radius: 5px;
+    max-width: 100%;
+    display: block;
+}
+
+.responsive-img{
+    width: 100%;
+    height: auto;
+}
+
+#colored-prep-content{
+    color: rgb(94, 12, 80);
+    font-weight: bolder;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.prep-content{
+    text-align: left;
+    padding-left: 26px;
+    padding-right: 25px;
+    font-family: Outfit;
+    font-size: 15px;
+    color: rgb(90, 86, 86);
+}
+
+.faded-bg{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 224, 227);
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.ingredient-content{
+    color: brown;
+    font-family: YoungSerif-Regular;
+    font-size: 24px;
+}
+
+ul, ol{
+    list-style-position: inside;
+}
+
+li{
+    margin-bottom: 5px;
+    word-spacing: 1px;
+}
+
+
+.ul-content{
+    font-family: Outfit;
+    font-size: 15px;
+    color: rgb(70, 65, 65);
+    padding-bottom: 12px;
+}
+
+.ul-content-2{
+    padding-left: 1em;
+}
+
+.align_ul-content{
+    margin-left: -20px;
+}
+
+.strip-line{
+    border: 1px rgba(216, 209, 209, 0.753) solid;
+}
+
+.instruction-content{
+    color: brown;
+    font-family: YoungSerif-Regular;
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+}
+
+.nutrition-content{
+    color: brown;
+    font-family: YoungSerif-Regular;
+    font-size: 24px;
+    padding-top: 8px;
+}
+
+.attribution { 
+    margin: 15px;
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.last-p-tag{
+    font-family: Outfit;
+    color: rgb(70, 65, 65);
+}
+
+.text-spacing{
+    word-spacing: 170px;
+}
+
+.last-p-tag-colored-text{
+    color: brown;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+
+.table-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.table-items{
+    width: 50%;
+    padding-left: 10px;
+    font-size: .8rem;
+    font-weight: bold;
+    color: brown;
+}
+
+.table-hr{
+    background-color: var(--Light-Grey);
+    height: 1px;
+    border: none;
+}
+
+.container, .container img{
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+      max-width: 736px;
+      padding: 2.5rem;
+      margin-top: 7.75rem;
+      border-radius: 1rem;
+    }
+    .hero {
+      border-radius: 1rem;
+    }
+  }
